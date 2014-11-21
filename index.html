@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style3D2.css"/>
+</head>
+<body>
+    <div class="menu">
+        <button type="button" id="experiences" class="btn btn-info">Contact</button>
+        <button type="button" id="projects" class="btn btn-info">Experiences</button>
+        <button type="button" id="education" class="btn btn-info">Projects</button>
+        <button type="button" id="hobbies" class="btn btn-info">Education</button>
+        <button type="button" id="contact" class="btn btn-info">Comments</button>
+        <button type="button" id="comments" class="btn btn-info">Hobbies</button>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="space3d">
+        <div class="_3dbox">
+          <div class="_3dface _3dface--experiences">
+                <p><img src="img/Picture1.png" alt="doris.png"></p>
+                <h1>Doris Shum</h1>
+                <h3><img src="img/googlemail-128.png"> <a href="mailto:daimictse@gmail.com">daimictse@gmail.com</a></h3>
+                <h3><img src="img/octocat.png"> <a href="https://www.github.com/daimictse">www.github.com/daimictse</a></h3>
+                <h3><img src="img/LinkedIn-Logo-2C.png"> <a href="http://www.linkedin.com/in/dorisshum">www.linkedin.com/in/dorisshum</a></h3>
+                <h3><img src="img/Twitter_logo_blue_48.png"> <a href="http://www.twitter.com/daimictse">www.twitter.com/daimictse</a></h3>
+          </div>
+          <div class="_3dface _3dface--contact"></div>
+          <div class="_3dface _3dface--comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'mycube'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+          <div class="_3dface _3dface--projects"></div>
+          <div class="_3dface _3dface--education"></div>
+          <div class="_3dface _3dface--hobbies"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'mycube'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="jquery.event.drag-2.2/jquery.event.drag-2.2.js"></script>
+    <script type="text/javascript" src="jquery.event.drag-2.2/jquery.event.drag.live-2.2.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

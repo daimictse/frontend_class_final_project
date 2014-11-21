@@ -1,0 +1,88 @@
+body {
+    margin: 20px 20px 50px 20px;
+}
+a {
+    text-decoration: none;
+}
+.scene {
+    text-align: center;
+    display: inline-block;
+    margin: 100px 100px 100px 100px;
+    width: 250px;
+    height: 250px;
+
+    -webkit-perspective: 600px;
+}
+.cube {
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    position: relative;
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-20deg) rotateY(20deg);
+    -webkit-transition: all 0.6s;
+}
+.cube-face {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background:white;
+    border: 1px solid #888;
+    opacity: 0.8;
+}
+/* front */
+.cube-face-experiences {
+    width: 250px;
+    height: 250px;
+    -webkit-transform: translate3d(0, 0, 125px); 
+    background-image: url("../img/front.png");
+    background-size: 100%;   
+}
+/* left */
+.cube-face-projects {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    margin-left: -125px;
+    -webkit-transform: rotateY(-90deg) translate3d(0, 0, 125px);
+    background-image: url("../img/left.png");
+    background-size: auto 100%;
+}
+/* back */
+.cube-face-education {
+    width: 250px;
+    height: 250px;
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 125px);
+    background-image: url("../img/back.jpeg");
+    background-size: auto 100%;
+}
+/* right */
+.cube-face-hobbies {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    margin-left: -125px;
+    -webkit-transform: rotateY(90deg) translate3d(0, 0, 125px);
+    background-image: url("../img/right.jpeg");
+    background-size: auto 100%;
+}
+/* top */
+.cube-face-contacts {
+    width: 250px;
+    height: 250px;
+    -webkit-transform: rotateX(90deg) translate3d(0, 0, 125px);
+    background-image: url("../img/top.png");
+    background-size: auto 100%;
+}
+/* bottom */
+.cube-face-comments {
+    width: 250px;{
+    height: 250px;
+    -webkit-transform: rotateX(-90deg) translate3d(0, 0, 125px);
+    background-image: url("../img/bottom.jpeg");}
+    background-size: auto 100%;
+}
+
+;
