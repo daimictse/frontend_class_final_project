@@ -5,12 +5,66 @@ body {
   text-align: center;
   font-family: Arial;
 }
+._3dface--contact h2 {
+  font-family: Cosmic;
+  font-weight: bold;
+}
+._3dface--education h2,
+._3dface--projects h2 {
+    font-family:'Pacifico', Arial, serif;
+    font-size: 40px;
+    color: #5656DC;
+    font-style: italic;
+}
+th, td {
+  text-align: center;
+}
 .menu {
   text-align: left;
 }
 
 .separator {
   margin-top: 100px;
+}
+
+#disqus_thread {
+  margin: 1px 5px 0px 5px;
+}
+/* 3D Cube */
+.space3d {
+  -webkit-perspective: 1500px;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+  display: inline-block;
+}
+
+._3dbox {
+  display: inline-block;
+  -webkit-transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(-15deg) rotateY(20deg);
+}
+
+._3dface {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid #888;
+  background: #FFF;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.3);
+  color: #333;
+  line-height: 500px;
+  opacity: 0.9;
+}
+
+._3dface--experiences {
+  width: 800px;
+  height: 500px;
+  -webkit-transform: translate3d(0, 0, 250px);
 }
 ._3dface--experiences h1 {
     background-color: rgba(99, 166, 133, 0.5);
@@ -35,61 +89,68 @@ body {
     vertical-align: top;
     width: 130px;
     height: 130px;
-    align: right;
-}
-#disqus_thread {
-  margin: 1px 5px 0px 5px;
-}
-/* 3D Cube */
-.space3d {
-  -webkit-perspective: 1500px;
-  width: 800px;
-  height: 500px;
-  text-align: center;
-  display: inline-block;
-}
-
-._3dbox {
-  display: inline-block;
-  -webkit-transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  text-align: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform: rotateX(-12deg) rotateY(18deg);
-}
-
-._3dface {
-  overflow: hidden;
-  position: absolute;
-  border: 1px solid #888;
-  background: #FFF;
-  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.3);
-  color: #333;
-  line-height: 500px;
-  opacity: 0.9;
-}
-
-._3dface--experiences {
-  width: 800px;
-  height: 500px;
-  -webkit-transform: translate3d(0, 0, 250px);
+    text-align: right;
 }
 ._3dface--projects {
   width: 800px;
   height: 500px;
   top: -25%;
+  line-height: 30px;
+  font-size: 20px;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 125px);
 }
-
+.projIntro {
+  margin-top:20px;
+  background-color: #AAAAEE;
+  line-height: 40px;
+}
+.projDesc p {
+  margin: 0px 10px 0px 10px;
+}
+.projDesc img {
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+.firstWord {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+}
+.projDesc .belowSign {
+  float: right;
+  margin: 0px 10px 0px 0px;
+}
+.projRef {
+  text-align: center;
+}
+.projRef img {
+  margin: 5px 5px 5px 5px;
+}
+.scroll{
+  width: 800px;
+  height: 350px;
+  text-align: left;
+  font-size: 14px;
+  overflow-y: scroll;
+}
 ._3dface--education {
   width: 800px;
   height: 500px;
   bottom: -25%;
+  font-size: 16px;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 125px);
 }
-
+._3dface--education table {
+    width: 100%;
+    margin-top: 25px;
+}
+._3dface--education tbody {
+    line-height: 40px;
+}
+._3dface--education th {
+    background-color: #AAAAEE;
+    font-size: 20px;
+}
 ._3dface--contact {
   width: 500px;
   height: 500px;
@@ -105,13 +166,58 @@ body {
   margin-left: -125px;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 125px);
 }
-
+.imagesBox {
+  margin: 1em auto;
+  line-height: 1;
+  text-align: center;
+  width: 300px;
+}
+.travelTitle {
+  line-height: 2;
+}
+.travel1 {
+  font-size: 30px;
+  font-family: 'Chewy', cursive;
+  color: orange;
+  line-height: 2;
+  padding-right: 10px;
+}
+.travel2 {
+  font-size: 22px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: brown;
+  line-height: 2;
+  padding-right: 10px;
+}
+.travel3 {
+  font-size: 16px;
+  font-family: 'Indie Flower', cursive;
+  color: red;
+  line-height: 2;
+}
 ._3dface--hobbies {
   width: 800px;
   height: 500px;
+  text-align: left;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 250px);
 }
-
+.jobTitleBox {
+  line-height: 1;
+}
+.jobTitleMenu {
+  margin: 10px 5px 10px 5px;
+}
+.jobBox{
+  margin: 10px 10px 10px 10px;
+  line-height: 2;
+}
+#jobTitle,
+#jobTasks {
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #461775;
+}
 ._3dface--experiences {
   background-color: #E2F9F4;
   background-size: 100%;
@@ -141,4 +247,12 @@ body {
   background-color: #E2F9F4;
   background-size: auto 100%;
 }
+.clearfix:after {
+    display: block;
+    height: 0px;
+    content: ' ';
+    visibility: hidden;
+    clear: both;
+}
+
 ;

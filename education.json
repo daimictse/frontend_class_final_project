@@ -1,0 +1,32 @@
+{
+	"education": [
+		{
+			"year": "Present",
+			"school": "Hackbright Academy",
+			"city": "San Francisco",
+			"state": "CA",
+			"subject": "Front-End Web Development"
+		},
+		{
+			"year": "2013",
+			"school": "Hackbright Academy",
+			"city": "San Francisco",
+			"state": "CA",
+			"subject": "Software Engineer"
+		},
+		{
+			"year": "1995-2013",
+			"school": "College of San Mateo",
+			"city": "San Mateo",
+			"state": "CA",
+			"subject": "Java, HTML, DHTML, CSS"
+		},
+		{
+			"year": "1995",
+			"school": "UC Santa Cruz",
+			"city": "Santa Cruz",
+			"state": "CA",
+			"subject": "B.A. in Computer Science"
+		}
+	]
+}

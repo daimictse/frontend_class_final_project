@@ -7,8 +7,25 @@ $(document).ready(function() {
     var comments = $('._3dface._3dface--comments');
     var front = experiences;
 
+    var readEdu = function() {
+        $.ajax({
+            url: "education.json",
+            type: "GET",
+            dataType: "json",
+            success: function(response) {
+                for (var i=0; i<response.education.length; i++) 
+                    writeEdu(response.education[i]);
+            },
+            error: function(response) {
+                alert("invalid data");
+            }
+        });
+    };
+
+    readEdu();
+
     var turnToExperiences = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-12deg) rotateY(18deg)'});
+        $('._3dbox').css({ WebkitTransform: 'rotateX(-15deg) rotateY(20deg)'});
         front = experiences;
     };
     var turnToContact = function() {
@@ -20,15 +37,16 @@ $(document).ready(function() {
         front = comments;
     };
     var turnToHobbies = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-12deg) rotateY(198deg)' });
+        $('._3dbox').css({ WebkitTransform: 'rotateX(-15deg) rotateY(200deg)' });
+        $('#jobTitle0').focus();
         front = hobbies;
     };
     var turnToProjects = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-102deg) rotateZ(18deg)' });
+        $('._3dbox').css({ WebkitTransform: 'rotateX(-105deg) rotateZ(20deg)' });
         front = projects;
     }
     var turnToEducation = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(78deg) rotateZ(-18deg)' });
+        $('._3dbox').css({ WebkitTransform: 'rotateX(75deg) rotateZ(-20deg)' });
         front = education;        
     }
     $('#experiences').on('click', function() {
@@ -135,11 +153,55 @@ $(document).ready(function() {
         }
     });
 
-    var writeExperiences = function() {
-        experiences.attr("background-color", "#E2F9F4");
-        experiences.append("<h1>hello</h1>");
+    var writeEdu = function(edu) {
+        var $thisEdu = $('<tr>');
+        $thisEdu.append('<td>'+edu.year+'</td>');
+        $thisEdu.append('<td>'+edu.subject+'</td>');
+        $thisEdu.append('<td>'+edu.school+' ('+edu.city+','+edu.state+')</td>');
+        $('.eduTable').append($thisEdu);
     };
-    //writeExperiences();
+    // show different job related contents according to job title //
+    var writeJob = function(jobNum) {
+        $.ajax({
+            url: "jobs.json",
+            type: "GET",
+            dataType: "json",
+            success: function(response) {
+                $('#jobTitle').text(response.jobs[jobNum].jobTitle);
+                $('#jobPeriod').text(response.jobs[jobNum].jobPeriod);
+                $('#jobLocation').text(response.jobs[jobNum].jobLocation);
+                // tasks might have different length; remove existing first //
+                $('#jobTasks ul').empty();
+                for (var i=0; i<response.jobs[jobNum].jobTasks.length; i++)
+                    $('#jobTasks ul').append('<li>'+response.jobs[jobNum].jobTasks[i]+'</li>');
+            },
+            error: function(response) {
+                alert("invalid data");
+            }
+        });
+    };
+    // for each job, call writeJob with its job # //
+    $('#jobTitle0').on('click', function() {
+        writeJob(0);
+    });
+    $('#jobTitle1').on('click', function() {
+        writeJob(1);
+    });
+    $('#jobTitle2').on('click', function() {
+        writeJob(2);
+    });
+    $('#jobTitle3').on('click', function() {
+        writeJob(3);
+    });
+    $('#jobTitle4').on('click', function() {
+        writeJob(4);
+    });
+    $('.slideShow').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
 });
 /* instead of calling .on for each face, the following can be used instead
         var faceArray = [experience, education,]

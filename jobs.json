@@ -1,0 +1,55 @@
+{
+	"jobs": [
+		{
+			"jobTitle": "Systems Lead",
+			"jobPeriod": "2012-Present",
+			"jobLocation": "ITOUCHLESS HOUSEWARES (San Mateo, CA)",
+			"jobTasks": ["Responsible for the company's website replatform project as the main contact to the third party software development company",
+                                     "Set up products and configurations of all aspects on the backend console",
+                                     "Participates in the analysis of existing business rules, processes, and systems to recommend process and system enhancements to improve business performance and maximize the effectiveness of available technology",
+                                     "Supports the development of technical specifications and provides ongoing assistance",
+                                     "Assists manager with other administrative tasks as requested",
+                                     "Provides ongoing support for technical system questions and problems"]
+		},
+		{
+                        "jobTitle": "Customer Service Manager",
+                        "jobPeriod": "2010-2012",
+                        "jobLocation": "ATTEN DANCEWEAR (San Francisco, CA)",
+			"jobTasks": [
+				"Supervised 6-8 part-time customer service rep",
+				"Processed daily orders, create weekly invoice reports, and handled dealers' and customers' inquiries and requests"
+			]
+		},
+                {
+                        "jobTitle": "SQA Engineer",
+                        "jobPeriod": "2000-2002",
+                        "jobLocation": "VENTRO CORPORATION (Mountain View, CA)",
+                        "jobTasks": [
+				"Responsible for the white box QA of the search engine, catalog services, and data replication and propagation, and black box QA of an internet-based software",
+				"Validated tests in Oracle database and Verity Collection",
+				"Created functionality, negative, boundary, and stress testcases in XML",
+				"Wrote Perl test scripts with the usage of DOM model, and test plan for each service in HTML and FrontPage"
+                        ]
+                },
+                {
+                        "jobTitle": "SMTS",
+                        "jobPeriod": "1996-2000",
+                        "jobLocation": "CADENCE DESIGN SYSTEMS, INC. (San Jose, CA)",
+                        "jobTasks": [
+				"Designed and implemented a program to validate the functionality and assure the high quality of all database functions at the C level. Program reached 99% of functional coverage and 70% of line coverage. Work included coding in C, C++, Perl, and writing documentation",
+				"Implemented translators to translate VHDL into company's proprietary database with the usage of a third party parser",
+				"Maintained and enhanced database functions, technology file APIs, and different translators such as LEF, DEF, SDF, GDSII, and VERILOG. Work included adding new requirements, bug fixes, and testing. Programs are written in C, C++, Lex, Yacc, and with some GUI"
+                        ]
+                },
+                {
+                        "jobTitle": "MTS",
+                        "jobPeriod": "1995-1996",
+                        "jobLocation": "TOPPAN ELECTRONICS (U.S.A.), INC. (Santa Clara, CA)",
+                        "jobTasks": [
+				"Implemented a program to partition a whole circuit into sub-circuits",
+				"Implemented a DEF parser. Maintained CDL, EDIT, and SDF parsers",
+				"Assisted in database query function implementations"
+                        ]
+                }
+	]
+}

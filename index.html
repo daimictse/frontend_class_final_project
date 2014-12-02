@@ -5,16 +5,21 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+
     <link rel="stylesheet" href="css/style3D2.css"/>
 </head>
 <body>
     <div class="menu">
         <button type="button" id="experiences" class="btn btn-info">Contact</button>
-        <button type="button" id="projects" class="btn btn-info">Experiences</button>
-        <button type="button" id="education" class="btn btn-info">Projects</button>
-        <button type="button" id="hobbies" class="btn btn-info">Education</button>
-        <button type="button" id="contact" class="btn btn-info">Comments</button>
-        <button type="button" id="comments" class="btn btn-info">Hobbies</button>
+        <button type="button" id="hobbies" class="btn btn-info">Experiences</button>
+        <button type="button" id="projects" class="btn btn-info">Projects</button>
+        <button type="button" id="education" class="btn btn-info">Education</button>
+        <button type="button" id="contact" class="btn btn-info">Hobbies</button>
+        <button type="button" id="comments" class="btn btn-info">Comments</button>
     </div>
 
     <div class="separator"></div>
@@ -29,7 +34,28 @@
                 <h3><img src="img/LinkedIn-Logo-2C.png"> <a href="http://www.linkedin.com/in/dorisshum">www.linkedin.com/in/dorisshum</a></h3>
                 <h3><img src="img/Twitter_logo_blue_48.png"> <a href="http://www.twitter.com/daimictse">www.twitter.com/daimictse</a></h3>
           </div>
-          <div class="_3dface _3dface--contact"></div>
+          <div class="_3dface _3dface--contact">
+                <h2>Hobbies</h2>
+                <div class="travelTitle">
+                    <span class="travel1">Traveling</span>
+                    <span class="travel2">Traveling</span>
+                    <span class="travel3">Traveling</span>
+                    <p>Places I've been to...</p>
+                </div>
+                <div class="imagesBox">
+                    <div class="slideShow">
+                      <div><img src="img/img1.jpeg"></div>
+                      <div><img src="img/img2.jpeg"></div>
+                      <div><img src="img/img3.jpeg"></div>
+                      <div><img src="img/img4.jpeg"></div>
+                      <div><img src="img/img5.jpeg"></div>
+                      <div><img src="img/img6.jpeg"></div>
+                      <div><img src="img/img7.jpeg"></div>
+                      <div><img src="img/img8.jpeg"></div>
+                      <div><img src="img/img9.jpeg"></div>
+                    </div>
+                </div>
+          </div>
           <div class="_3dface _3dface--comments">
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
@@ -45,9 +71,60 @@
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
-          <div class="_3dface _3dface--projects"></div>
-          <div class="_3dface _3dface--education"></div>
-          <div class="_3dface _3dface--hobbies"></div>
+          <div class="_3dface _3dface--projects">
+                <h2>Projects</h2>
+                <p class="projIntro">iOS App: Easy Cursive and Color</p>
+                <div class="scroll">
+                    <div class="projDesc clearfix">
+                        <img src="img/ios-app-cover.png">
+                        <p><span class="firstWord">Final</span> project of the software engineer program at Hackbright Academy in Fall 2013</p>
+                        <p><span class="firstWord">App</span> uses Python, Flask, Xcode, Objective-C, Bezier path and $P gesture recognizer API.</p>
+                        <p><span class="firstWord">Ideal</span> paths are define for each lowercase and uppercase of each of the 26 alphabets. As user traces the alphabet(s), the app creates a bezier path. After the 'Done' button is hit, the app create 2 bitmaps images from the ideal path and bezier path, and compare each bytes on the images to calculate a score. Scores will be kept if user log in with a name and a password.</p>
+                        <p><span class="firstWord">The</span> mini-game of color mixing has a set of basic colors. A matrix with the correct color combinations is used to compare the result.
+                        <img class="belowSign" src="img/moreAtBelow.png"></p>
+                    </div>
+                    <div class="projRef">
+                            <img src="img/ios-app-games.png">
+                            <img src="img/ios-app-letter.png">
+                            <img src="img/ios-app-color.png">
+                    </div>
+                    <div class="projRef">https://github.com/daimictse/smart-learning</div>
+                </div>
+        </div>
+          <div class="_3dface _3dface--education">
+                <h2>Education</h2>
+                <table class='eduTable'>
+                    <tr>
+                        <th>Year</th>
+                        <th>Subject</th>
+                        <th>School</th>
+                    </tr>
+                </table>
+          </div>
+          <div class="_3dface _3dface--hobbies">
+                <div class="jobTitleBox">
+                    <button type="button" id="jobTitle0" class="btn btn-success jobTitleMenu">Systems Lead</button>
+                    <button type="button" id="jobTitle1" class="btn btn-success jobTitleMenu">Customer Service Manager</button>
+                    <button type="button" id="jobTitle2" class="btn btn-success jobTitleMenu">SQA Engineer</button>
+                    <button type="button" id="jobTitle3" class="btn btn-success jobTitleMenu">SMTS</button>
+                    <button type="button" id="jobTitle4" class="btn btn-success jobTitleMenu">MTS</button>
+                </div>
+                <div class="jobBox">
+                    <div id="jobTitle">Systems Lead</div>
+                    <div id="jobPeriod">2012-Present</div>
+                    <div id="jobLocation">ITOUCHLESS HOUSEWARES (San Mateo, CA)</div>
+                    <div id="jobTasks">
+                        <ul>
+                            <li>Responsible for the company's website replatform project as the main contact to the third party software development company</li>
+                            <li>Set up products and configurations of all aspects on the backend admin panel</li>
+                            <li>Participates in the analysis of existing business rules, processes, and systems to recommend process and system enhancements to improve business performance and maximize the effectiveness of available technology</li>
+                            <li>Supports the development of technical specifications and provides ongoing assistance</li>
+                            <li>Assists manager with other administrative tasks as requested</li>
+                            <li>Provides ongoing support for technical system questions and problems</li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
         </div>
     </div>
 
@@ -64,9 +141,11 @@
     }());
     </script>
 
-    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="jquery.event.drag-2.2/jquery.event.drag-2.2.js"></script>
     <script type="text/javascript" src="jquery.event.drag-2.2/jquery.event.drag.live-2.2.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
