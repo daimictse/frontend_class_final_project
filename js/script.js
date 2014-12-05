@@ -25,28 +25,46 @@ $(document).ready(function() {
     readEdu();
 
     var turnToExperiences = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-15deg) rotateY(20deg)'});
+        $('._3dbox').css({ "WebkitTransform": 'rotateX(-15deg) rotateY(20deg)',
+            "MozTransform":"rotateX(-15deg) rotateY(20deg)",
+            "msTransform":"rotateX(-15deg) rotateY(20deg)",
+            "transform":"rotateX(-15deg) rotateY(20deg)"});
         front = experiences;
     };
     var turnToContact = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-15deg) rotateY(105deg)'});
+        $('._3dbox').css({ 'WebkitTransform': 'rotateX(-15deg) rotateY(105deg)',
+            'MozTransform': 'rotateX(-15deg) rotateY(105deg)',
+            'msTransform': 'rotateX(-15deg) rotateY(105deg)',
+            'transform': 'rotateX(-15deg) rotateY(105deg)'});
         front = contact;
     };
     var turnToComments = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-15deg) rotateY(-75deg)'});
+        $('._3dbox').css({ 'WebkitTransform': 'rotateX(-15deg) rotateY(-75deg)',
+            'MozTransform': 'rotateX(-15deg) rotateY(-75deg)',
+            'msTransform': 'rotateX(-15deg) rotateY(-75deg)',
+            'transform': 'rotateX(-15deg) rotateY(-75deg)'});
         front = comments;
     };
     var turnToHobbies = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-15deg) rotateY(200deg)' });
+        $('._3dbox').css({ 'WebkitTransform': 'rotateX(-15deg) rotateY(200deg)',
+            'MozTransform': 'rotateX(-15deg) rotateY(200deg)',
+            'msTransform': 'rotateX(-15deg) rotateY(200deg)',
+            'transform': 'rotateX(-15deg) rotateY(200deg)' });
         $('#jobTitle0').focus();
         front = hobbies;
     };
     var turnToProjects = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(-105deg) rotateZ(20deg)' });
+        $('._3dbox').css({ 'WebkitTransform': 'rotateX(-105deg) rotateZ(20deg)',
+            'MozTransform': 'rotateX(-105deg) rotateZ(20deg)',
+            'msTransform': 'rotateX(-105deg) rotateZ(20deg)',
+            'transform': 'rotateX(-105deg) rotateZ(20deg)' });
         front = projects;
     }
     var turnToEducation = function() {
-        $('._3dbox').css({ WebkitTransform: 'rotateX(75deg) rotateZ(-20deg)' });
+        $('._3dbox').css({ 'WebkitTransform': 'rotateX(75deg) rotateZ(-20deg)',
+            'MozTransform': 'rotateX(75deg) rotateZ(-20deg)',
+            'msTransform': 'rotateX(75deg) rotateZ(-20deg)',
+            'transform': 'rotateX(75deg) rotateZ(-20deg)' });
         front = education;        
     }
     $('#experiences').on('click', function() {

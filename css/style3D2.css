@@ -33,6 +33,9 @@ th, td {
 /* 3D Cube */
 .space3d {
   -webkit-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -moz-perspective: 1500px;
+  perspective: 1500px;
   width: 800px;
   height: 500px;
   text-align: center;
@@ -42,12 +45,21 @@ th, td {
 ._3dbox {
   display: inline-block;
   -webkit-transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.85s cubic-bezier(0.175,0.885,0.32,1.275);
   text-align: center;
   position: relative;
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform: rotateX(-15deg) rotateY(20deg);
+  -moz-transform: rotateX(-15deg) rotateY(20deg);
+  -ms-transform: rotateX(-15deg) rotateY(20deg);
+  transform: rotateX(-15deg) rotateY(20deg);
 }
 
 ._3dface {
@@ -65,6 +77,9 @@ th, td {
   width: 800px;
   height: 500px;
   -webkit-transform: translate3d(0, 0, 250px);
+  -moz-transform: translate3d(0, 0, 250px);
+  -ms-transform: translate3d(0, 0, 250px);
+  transform: translate3d(0,0,250px);
 }
 ._3dface--experiences h1 {
     background-color: rgba(99, 166, 133, 0.5);
@@ -98,6 +113,9 @@ th, td {
   line-height: 30px;
   font-size: 20px;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 125px);
+  -moz-transform: rotateX(90deg) translate3d(0, 0, 125px);
+  -ms-transform: rotateX(90deg) translate3d(0, 0, 125px);
+  transform: rotateX(90deg) translate3d(0,0,125px);
 }
 .projIntro {
   margin-top:20px;
@@ -139,6 +157,9 @@ th, td {
   bottom: -25%;
   font-size: 16px;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 125px);
+  -moz-transform: rotateX(-90deg) translate3d(0, 0, 125px);
+  -ms-transform: rotateX(-90deg) translate3d(0, 0, 125px);
+  transform: rotateX(-90deg) translate3d(0, 0, 125px);
 }
 ._3dface--education table {
     width: 100%;
@@ -157,6 +178,9 @@ th, td {
   left: 0%;
   margin-left: -125px;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, 125px);
+  -moz-transform: rotateY(-90deg) translate3d(0, 0, 125px);
+  -ms-transform: rotateY(-90deg) translate3d(0, 0, 125px);
+  transform: rotateY(-90deg) translate3d(0, 0, 125px);
 }
 
 ._3dface--comments {
@@ -165,6 +189,9 @@ th, td {
   left: 69%;
   margin-left: -125px;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 125px);
+  -moz-transform: rotateY(90deg) translate3d(0, 0, 125px);
+  -ms-transform: rotateY(90deg) translate3d(0, 0, 125px);
+  transform: rotateY(90deg) translate3d(0, 0, 125px);
 }
 .imagesBox {
   margin: 1em auto;
@@ -200,6 +227,9 @@ th, td {
   height: 500px;
   text-align: left;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 250px);
+  -moz-transform: rotateY(180deg) translate3d(0, 0, 250px);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, 250px);
+  transform: rotateY(180deg) translate3d(0, 0, 250px);
 }
 .jobTitleBox {
   line-height: 1;

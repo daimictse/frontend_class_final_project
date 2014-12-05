@@ -5,11 +5,11 @@
 			"jobPeriod": "2012-Present",
 			"jobLocation": "ITOUCHLESS HOUSEWARES (San Mateo, CA)",
 			"jobTasks": ["Responsible for the company's website replatform project as the main contact to the third party software development company",
-                                     "Set up products and configurations of all aspects on the backend console",
-                                     "Participates in the analysis of existing business rules, processes, and systems to recommend process and system enhancements to improve business performance and maximize the effectiveness of available technology",
-                                     "Supports the development of technical specifications and provides ongoing assistance",
-                                     "Assists manager with other administrative tasks as requested",
-                                     "Provides ongoing support for technical system questions and problems"]
+                                     "Set up products and configure all aspects on the backend admin panel",
+                                     "Analyze existing business rules, processes, and systems to recommend enhancements and improvements to business performance and maximize effectiveness of available technology",
+                                     "Support the development of technical specifications and provide ongoing assistance",
+                                     "Assist manager with other administrative tasks as requested",
+                                     "Provide ongoing support for technical system questions and problems"]
 		},
 		{
                         "jobTitle": "Customer Service Manager",
@@ -17,7 +17,7 @@
                         "jobLocation": "ATTEN DANCEWEAR (San Francisco, CA)",
 			"jobTasks": [
 				"Supervised 6-8 part-time customer service rep",
-				"Processed daily orders, create weekly invoice reports, and handled dealers' and customers' inquiries and requests"
+				"Processed daily orders, created weekly invoice reports, and resolved dealers and customers inquiries and requests"
 			]
 		},
                 {
@@ -25,10 +25,10 @@
                         "jobPeriod": "2000-2002",
                         "jobLocation": "VENTRO CORPORATION (Mountain View, CA)",
                         "jobTasks": [
-				"Responsible for the white box QA of the search engine, catalog services, and data replication and propagation, and black box QA of an internet-based software",
+				"Responsible for the white box QA of search engines, catalog services, and data replication and propagation, and black box QA of Internet-based software",
 				"Validated tests in Oracle database and Verity Collection",
 				"Created functionality, negative, boundary, and stress testcases in XML",
-				"Wrote Perl test scripts with the usage of DOM model, and test plan for each service in HTML and FrontPage"
+				"Wrote Perl test scripts with the usage of DOM model and test plans for each service in HTML and FrontPage"
                         ]
                 },
                 {
